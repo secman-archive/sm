@@ -1,5 +1,5 @@
-require 'optparse'
-require 'colorize'
+require "optparse"
+require "colorize"
 
 wel = "Welcome to".blue
 smvm = "secman vm".cyan
