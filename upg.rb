@@ -1,7 +1,7 @@
 require "rbconfig"
 require "colorize"
 
-$l = `bash ~/sm/verx secman-team/secman -l`
+$l = `verx secman-team/secman -l`
 $c = `secman verx`
 
 smLoc = "/usr/local/bin"
@@ -45,12 +45,11 @@ elsif $l != $c
             system("sudo rm -rf #{smLoc}/secman*")
             system("sudo rm -rf #{smLoc}/cgit*")
             system("sudo rm -rf #{smLoc}/verx*")
+            _os()
         else
             raise Error::WebDriverError, "unknown os: #{host_os.inspect}"
         end
     )
-
-    _os()
 
     puts "#{sm} was upgraded successfully"
 end
