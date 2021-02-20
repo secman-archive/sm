@@ -1,5 +1,5 @@
-require 'optparse'
-require 'colorize'
+require "optparse"
+require "colorize"
 
 $l = `bash ~/sm/verx secman-team/secman -l`
 $c = `secman verx`
