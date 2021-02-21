@@ -36,20 +36,7 @@ if $l == $c
     puts "#{sm} #{al} #{$l.yellow}"
     
 elsif $l != $c
-    @os ||= (
-        host_os = RbConfig::CONFIG['host_os']
-
-        case host_os
-        when /darwin|mac os|linux/
-            :macosx_linux
-            system("sudo rm -rf #{smLoc}/secman*")
-            system("sudo rm -rf #{smLoc}/cgit*")
-            system("sudo rm -rf #{smLoc}/verx*")
-            _os()
-        else
-            raise Error::WebDriverError, "unknown os: #{host_os.inspect}"
-        end
-    )
+    _os()
 
     puts "#{sm} was upgraded successfully"
 end
