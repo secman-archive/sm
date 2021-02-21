@@ -7,8 +7,8 @@ $c = `secman verx`
 def _n()
   ly = $l.cyan.bold
   nr = "\nthere's a new release of secman is avalaible:".yellow
-  up = "to update it run".yellow
-  smu = "secman upd".blue
+  up = "to upgrade run".yellow
+  smu = "secman upg".cyan
   puts new_r = "#{nr} #{ly}#{up} #{smu}"
 end
 
