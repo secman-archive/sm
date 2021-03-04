@@ -4,12 +4,12 @@ require "colorize"
 $l = `verx secman-team/secman -l`
 $c = `secman verx`
 
-smLoc = "/usr/local/bin"
+$smLoc = "/usr/local/bin"
 
 def pre_upgrade
-    system("sudo rm -rf #{smLoc}/secman*")
-    system("sudo rm -rf #{smLoc}/cgit*")
-    system("sudo rm -rf #{smLoc}/verx*")
+    system("sudo rm -rf #{$smLoc}/secman*")
+    system("sudo rm -rf #{$smLoc}/cgit*")
+    system("sudo rm -rf #{$smLoc}/verx*")
     system("sudo rm -rf /home/sm")
 end
 
