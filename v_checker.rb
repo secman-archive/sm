@@ -13,7 +13,7 @@ def _n()
 end
 
 def check()
-  if $l + "\n" != $c
+  if $l != $c
     _n
   end
 end
