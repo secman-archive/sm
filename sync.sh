@@ -1,3 +1,3 @@
 if [ -d ~/.secman/.git ]; then
-    echo "Reading from .git folder..."
+    echo "📖 Reading from .git folder..."
 fi
