@@ -1,3 +1,3 @@
 # sm
 
-secman deps dir
+old secman tools
